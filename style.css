@@ -108,6 +108,7 @@ body {
 }
 
 .planet:hover {
+  box-shadow: 0 0 15px 5px #5b556e;
   animation: pulse 1.5s ease-in-out infinite alternate; 
 }
 
