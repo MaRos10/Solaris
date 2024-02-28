@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(90deg, #0d1750, #170a1f);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.planet-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ------------------ TEXTHEADERS ------------------ */
+
+.text-headers {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  color: white;
+}
+
+.text-headers h1 {
+  margin: 0;
+  text-align: right;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+}
+
+.text-headers h2 {
+  margin: 0;
+  text-align: right;
+  font-family: "Lora", sans-serif;
+  text-transform: uppercase;
+  color: #facd29;
+  letter-spacing: 2rem;
+  font-weight: 300;
+}
+
+
+/* ------------------ SEARCH ------------------ */
+
+.text-headers h4 {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  width: 40%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+#search-button {
+  background-color: transparent;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border: 1px solid #03e9f4;
+  border-radius: 10px; 
+  font-family: "Roboto Condensed", sans-serif; 
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+#search-button:hover {
+  scale: 1.1;
+  }
+
+/* ------------------ PLANETS ------------------ */
+
+.planet {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: inset 0 -10px 10px -10px #000000;
+}
+
+.planet:hover {
+  animation: pulse 1.5s ease-in-out infinite alternate; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#planet0 {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 78rem;
+  height: 78rem;
+  top: -9rem;
+  left: -72rem;
+  background-color: #f9d03c;
+  box-shadow: 0 0 12px 5.5px #f9d03c;
+}
+
+#planet0:hover {
+  transition: all 0.3s ease-in-out;
+  scale: 1.03;
+}
+
+#planet1 {
+  width: 1rem;
+  height: 1rem;
+  top: 30.8rem;
+  left: 12.3rem;
+  background-color: #8d8b8b;
+}
+
+#planet2 {
+  width: 2.1rem;
+  height: 2.1rem;
+  top: 30.2rem;
+  left: 16rem;
+  background: radial-gradient(circle, rgb(220, 140, 78) 36%, rgb(208, 108, 65) 70%);
+}
+
+#planet3 {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 30rem;
+  left: 20rem;
+  background: linear-gradient(
+    305deg,
+    rgb(65, 43, 189) 10%,
+    rgb(70, 147, 88) 60%,
+    rgb(160, 223, 219) 90%
+  );
+}
+
+#planet4 {
+  width: 1.1rem;
+  height: 1.1rem;
+  top: 30.8rem;
+  left: 25rem;
+  background-color: #e36161;
+}
+
+#planet5 {
+  width: 11.9rem;
+  height: 11.9rem;
+  top: 25rem;
+  left: 29rem;
+  background: linear-gradient(
+    305deg,
+    rgb(115, 14, 14) 0%,
+    rgb(227, 138, 90) 70%,
+    rgb(227, 180, 138) 100%
+  );
+}
+
+#planet6 {
+  width: 9rem;
+  height: 9rem;
+  top: 26rem;
+  left: 46rem;
+  background: linear-gradient(
+    305deg,
+    rgb(154, 88, 23) 0%,
+    rgb(194, 139, 36) 40%,
+    rgb(220, 176, 126) 70%,
+    rgb(208, 202, 187) 100%
+  );
+}
+
+#circle {
+  position: absolute;
+  width: 12rem;
+  height: 0.5rem;
+  top: 4.5rem;
+  left: -1.5rem;
+  border-radius: 50%;
+  transform: rotate(155deg);
+  background-color: #ffffff59;
+}
+
+#planet7 {
+  width: 4.27rem;
+  height: 4.27rem;
+  top: 29rem;
+  left: 61rem;
+  background: linear-gradient(
+    305deg,
+    rgb(57, 36, 178) 20%,
+    rgb(160, 204, 214) 60%,
+    rgb(33, 87, 152) 100%
+  );
+}
+
+#planet8 {
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 29rem;
+  left: 70rem;
+  background: linear-gradient(
+    305deg,
+    rgb(57, 36, 178) 0%,
+    rgb(91, 167, 185) 70%,
+    rgb(213, 222, 233) 100%
+  );
+}
+
+
+/* ------------------ OVERLAY - PLANETPAGE ------------------ */
+
+#planet-overlay {
+  display: none;
+  overflow: auto; 
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: linear-gradient(90deg, #0d1750, #170a1f);
+}
+
+#planet-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  color: #fff;
+}
+
+#planet-text h1 {
+  font-family: "Secular One", sans-serif;
+  font-size: 3.7rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#planet-text p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 2rem;
+  width: 80%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  list-style: none;
+  margin-top: 0rem;
+  padding: 1rem 2rem;
+  border-top: 1px dotted rgba(246, 241, 241, 0.264);
+  border-bottom: 1px dotted rgba(246, 241, 241, 0.264);
+}
+
+li h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+li p {
+  letter-spacing: 0.15rem;
+}
+
+#close {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #03e9f4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+#close:hover {
+  scale: 1.1;
+  }
