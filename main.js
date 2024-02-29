@@ -11,6 +11,7 @@ const baseURL ="https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies";
 let planetsData = {};
 
 
+
 /* ------------------ API ------------------ */
 
 
@@ -56,6 +57,26 @@ async function getPlanets() {
 }
 
 
+
+/* ------------------ Creating stars on landingpage ------------------ */
+
+// This function creates 1000 div elements representing stars and places them randomly within the body element of the page when the page loads
+function createStars() {
+  const pageBody = document.querySelector("body");
+  for (let i = 0; i < 1000; i++) {
+    const star = document.createElement("div");
+    star.className = "star";
+    star.style.width = ".2px";
+    star.style.height = ".2px";
+    star.style.top = Math.random() * 100 + "%";
+    star.style.left = Math.random() * 100 + "%";
+    pageBody.appendChild(star);
+  }
+}
+createStars();
+
+
+
 /* ------------------ Display planets ------------------ */
 
 
@@ -78,7 +99,9 @@ const planetElements = [
   });
   
 
+
 /* ------------------ Search planets ------------------  */
+
 
 // Eventlisteners to handle searchfunctionality. If the user presses Enter-key in the search-inputfield, the searchPlanet-function is triggered
 document.getElementById("search-button").addEventListener("click", searchPlanets);

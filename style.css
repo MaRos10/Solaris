@@ -6,10 +6,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-}
-
-body {
-  background: linear-gradient(90deg, #0d1750, #170a1f);
+  background: linear-gradient(90deg, #111a4d, #14021e);
 }
 
 .no-scroll {
@@ -25,6 +22,14 @@ body {
   height: 100%;
 }
 
+/* ------------------ STARS ON LANDINGPAGE ------------------ */
+
+.star {
+  position: absolute;
+  background-color: rgb(117, 110, 110);
+  border-radius: 50%;
+  z-index: -1;
+}
 
 /* ------------------ TEXTHEADERS ------------------ */
 
