@@ -5,7 +5,7 @@ import { getPlanets } from "/main.js";
 /* --------- This module is used to show information about a planet  --------- */
 
 
-
+// DOM-elements
 const planetText = document.getElementById("planet-text");
 const planetOverlay = document.getElementById("planet-overlay");
 const closeButton = document.getElementById("close"); 
@@ -36,7 +36,7 @@ async function displayPlanetInfo(planetId) {
       return;
     }
   
-    console.log("Planet", foundPlanet.name, "is clicked!"); //ev radera, bara för att se i konsolen
+/*     console.log("Planet", foundPlanet.name, "is clicked!"); --- used for debugging */
   
     // Changing style on planetOverlay to 'flex' to be able to display the overlay with planet info
     planetOverlay.style.display = "flex";
