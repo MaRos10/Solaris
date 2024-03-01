@@ -18,7 +18,7 @@ async function getApiKey() {
       method: "POST",
     });
   
-    // Check response
+    // Checks response
     if (!resp.ok) {
       console.error("Something went wrong: ", resp.status);
       return;
@@ -27,27 +27,28 @@ async function getApiKey() {
     return data.key;
   }
   
-  // A function that fetches all planetdata from the bodies .endpoint
-  async function getPlanets() {
-    try {
-      // Retrieves the API key using the getApiKey function
-      const apiKey = await getApiKey();
-     /*  console.log("ApiKey i getPlanets", apiKey); --- used for debugging */
+// A function that fetches all planetdata from the bodies .endpoint
+async function getPlanets() {
+  try {
+    // Retrieves the API key using the getApiKey function
+    const apiKey = await getApiKey();
+    
+    /*  console.log("ApiKey i getPlanets", apiKey); --- used for debugging */
   
-      // Sends a GET request to the baseURL to fetch planetdata
-      const response = await fetch(baseURL, {
-        method: "GET",
-        headers: { "x-zocom": apiKey },
-      });
+    // Sends a GET request to the baseURL to fetch planetdata
+    const response = await fetch(baseURL, {
+      method: "GET",
+      headers: { "x-zocom": apiKey },
+    });
   
-      // Check response
-      if (!response.ok) {
-        throw new Error("Something went wrong", response.status);
-      }
-      let data = await response.json();
-      planetsData = data.bodies;
+    // Checks response
+    if (!response.ok) {
+      throw new Error("Something went wrong", response.status);
+    }
+    let data = await response.json();
+    planetsData = data.bodies;
     } catch (error) {
-      console.error(error.message);
+    console.error(error.message);
     }
     console.log("array", planetsData);
     return planetsData;
@@ -55,4 +56,4 @@ async function getApiKey() {
 
 
 
-  export {getPlanets};
+export {getPlanets};

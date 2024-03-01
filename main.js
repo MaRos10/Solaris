@@ -1,6 +1,6 @@
 import { displayPlanetInfo } from "./Modules/display.js"
 import { searchPlanets } from "./Modules/search.js"
-import { getPlanets } from './Modules/api.js';
+import { getPlanets } from "./Modules/api.js"
 
 
 
@@ -27,7 +27,7 @@ createStars();
 /* ------------------ Display planets ------------------ */
 
 
-// An array that contains references to DOM-elements with specific id's
+// An array that contains references to DOM-elements
 const planetElements = [
   document.getElementById("planet0"),
   document.getElementById("planet1"),
@@ -40,17 +40,18 @@ const planetElements = [
   document.getElementById("planet8"),
   ];
   
-  // Eventlistener for each planet, triggering displayPlanetInfo with the index of the selected planet
-  planetElements.forEach((element, index) => {
-    element.addEventListener("click", () => displayPlanetInfo(index));
-  });
+// Eventlistener for each planet, triggering displayPlanetInfo with the index of the selected planet
+planetElements.forEach((element, index) => {
+  element.addEventListener("click", () => displayPlanetInfo(index));
+});
   
 
 
 /* ------------------ Search planets ------------------  */
 
 
-// Eventlisteners to handle searchfunctionality. If the user presses Enter-key in the search-inputfield, the searchPlanet-function is triggered
+// Eventlisteners to handle searchfunctionality. If the user presses searchbutton or Enter-key in the search-inputfield, 
+// the searchPlanet-function is triggered
 document.getElementById("search-button").addEventListener("click", searchPlanets);
 
 document.getElementById("search-input").addEventListener("keypress", function(event) {

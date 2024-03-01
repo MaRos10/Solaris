@@ -26,17 +26,19 @@ function closeOverlay() {
 }
 
 
-// A function that awaits the data from getPlanets, searches for a matching ID, and displays the current data for the planet using DOM. The function is called through click events on each planet
+// A function that awaits the data from getPlanets, searches for a matching ID, and displays the current data for the planet using DOM. 
+// The function is called through click events on each planet
 async function displayPlanetInfo(planetId) {
     const planetsData = await getPlanets();
     const foundPlanet = planetsData.find((planet) => planet.id === planetId);
+    
     // Errormessage if no planet is found
     if (!foundPlanet) {
       console.log("Planet not found");
       return;
     }
   
-/*     console.log("Planet", foundPlanet.name, "is clicked!"); --- used for debugging */
+/* console.log("Planet", foundPlanet.name, "is clicked!"); --- used for debugging */
   
     // Changing style on planetOverlay to 'flex' to be able to display the overlay with planet info
     planetOverlay.style.display = "flex";

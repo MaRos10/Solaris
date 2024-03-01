@@ -63,14 +63,14 @@ body {
 /* ------------------ SEARCH ------------------ */
 
 .text-headers h4 {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   text-align: center;
   padding-top: 2rem;
 }
 
-.input-wrapper {
+.search-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,7 +259,7 @@ body {
   top: 0;
   left: 0;
   padding: 1rem;
-  background: linear-gradient(90deg, #0d1750, #170a1f);
+  background: linear-gradient(90deg, #111a4d, #14021e);
 }
 
 #planet-text {

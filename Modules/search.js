@@ -5,7 +5,7 @@ import { getPlanets, displayPlanetInfo } from "/main.js";
 /* --------- This module handles the search-function  --------- */
 
 
-// A asynchronous function to perform planetsearch
+// A function to perform planetsearch
 async function searchPlanets() {
   // Gets the search term from the search input field and converts it to lowercase
   const searchTerm = document.getElementById("search-input").value.toLowerCase();
