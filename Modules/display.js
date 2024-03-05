@@ -1,4 +1,4 @@
-import { getPlanets } from "/main.js";
+import { getPlanets } from "../main.js";
 
 
 
