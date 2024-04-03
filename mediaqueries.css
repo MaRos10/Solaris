@@ -1,9 +1,15 @@
 @media screen and (max-width: 768px) {
   /* ------------------ TEXTHEADERS & SEARCH ------------------ */
+  html {
+    display: flex;
+  }
+  .planet-wrapper {
+    justify-content: center;
+  }
 
   .text-headers {
     padding: 1rem;
-    text-align: center;
+    align-items: center;
   }
 
   .text-headers h1 {
@@ -106,18 +112,16 @@
 
   #planet-text h1 {
     font-size: 2.5rem;
+    margin: 0rem;
   }
 
   #planet-text p {
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
   }
 
   ul {
     padding: 1rem;
-  }
-
-  #close {
-    margin-top: 0.5rem;
+    gap: 0;
   }
 }
