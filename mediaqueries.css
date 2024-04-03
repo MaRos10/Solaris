@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px) {
+  /* ------------------ TEXTHEADERS & SEARCH ------------------ */
+
+  .text-headers {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .text-headers h1 {
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 2.3rem;
+  }
+
+  .text-headers h2 {
+    text-align: center;
+    letter-spacing: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  #search-input {
+    width: 60%;
+  }
+
+  #search-button {
+    margin-top: 2.8rem;
+  }
+
+  /* ------------------ PLANETS ------------------ */
+
+  #planet0 {
+    width: 3rem;
+    height: 3rem;
+    top: 32.5rem;
+    left: -1.8rem;
+  }
+
+  #planet1 {
+    width: 1rem;
+    height: 1rem;
+    top: 33.7rem;
+    left: 3rem;
+  }
+
+  #planet2 {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 33.4rem;
+    left: 5rem;
+  }
+
+  #planet3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 33.4rem;
+    left: 7rem;
+  }
+
+  #planet4 {
+    width: 1rem;
+    height: 1rem;
+    top: 33.6rem;
+    left: 9.3rem;
+  }
+
+  #planet5 {
+    width: 3rem;
+    height: 3rem;
+    top: 32.5rem;
+    left: 11rem;
+  }
+
+  #planet6 {
+    width: 2rem;
+    height: 2rem;
+    top: 33rem;
+    left: 15rem;
+  }
+
+  #circle {
+    width: 2.5rem;
+    height: 0.1rem;
+    top: 0.8rem;
+    left: -0.2rem;
+  }
+
+  #planet7 {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 33.3rem;
+    left: 18rem;
+  }
+
+  #planet8 {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 33.3rem;
+    left: 20.5rem;
+  }
+
+  /* ------------------ OVERLAY - PLANETPAGE ------------------ */
+
+  #planet-text {
+    width: 90%;
+  }
+
+  #planet-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #planet-text p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  ul {
+    padding: 1rem;
+  }
+
+  #close {
+    margin-top: 0.5rem;
+  }
+}
