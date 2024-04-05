@@ -108,7 +108,9 @@
 
   #planet-text {
     width: 90%;
-    height: 100svh;
+    height: calc(
+      100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+    );
   }
 
   #planet-text h1 {
