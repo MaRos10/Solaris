@@ -86,8 +86,8 @@
   #circle {
     width: 2.5rem;
     height: 0.1rem;
-    top: 0.8rem;
-    left: -0.2rem;
+    top: 0.95rem;
+    left: -0.25rem;
   }
 
   #planet7 {
@@ -108,7 +108,7 @@
 
   #planet-text {
     width: 90%;
-    height: 75%;
+    height: 100svh;
   }
 
   #planet-text h1 {
